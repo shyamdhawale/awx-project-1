@@ -1,11 +1,11 @@
 ---
-  - name: Create a login user
-     user:
-      name: fideloper
+   - name: Create a login user
+    user:
+     name: ansible
       password: '$6$F4NWXRFtSdCi8$DsB5vvMJYusQhSbvGXrYDXL6Xj37MUuqFCd4dGXdKd6NyxT3lpdELN07/Kpo7EjjWnm9zusFg/LLFv6oc.ynu/'
-      groups: docker, sudo   # Empty by default.
+      groups: sudo   # Empty by default.
       state: present
       shell: /bin/bash       # Defaults to /bin/bash
       system: no             # Defaults to no
       createhome: yes        # Defaults to yes
-      home: /home/fideloper  # Defaults to /home/<username>
+      home: /home/ansible  # Defaults to /home/<username>
